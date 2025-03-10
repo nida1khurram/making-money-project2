@@ -18,7 +18,7 @@ if st.button("Generate Money"):
 #side hustle func
 def fetch_side_hustle():
     try:
-        response = requests.get("https://demo2-eta-two.vercel.app/api/side_hustles")
+        response = requests.get("https://knai-fast-api.vercel.app/api/side_hustles")
         if response.status_code == 200:
             hustles = response.json()
             return hustles["side_hustle"]
@@ -35,7 +35,7 @@ if st.button("Generate hustles"):
 #money quotes func
 def fetch_money_quote():
     try:
-        response = requests.get("https://demo2-eta-two.vercel.app/api/money_quotes")
+        response = requests.get("https://knai-fast-api.vercel.app/api/money_quotes")
         if response.status_code == 200:
             quotes = response.json()
             return quotes["money_quote"]
