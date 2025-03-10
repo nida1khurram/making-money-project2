@@ -18,7 +18,7 @@ if st.button("Generate Money"):
 #side hustle func
 def fetch_side_hustle():
     try:
-        response = requests.get("https://demo2-eta-two.vercel.app/docs#/default/get_money_quotes_api_money_quotes_get")
+        response = requests.get("https://demo2-eta-two.vercel.app/api/side_hustles")
         if response.status_code == 200:
             hustles = response.json()
             return hustles["side_hustle"]
